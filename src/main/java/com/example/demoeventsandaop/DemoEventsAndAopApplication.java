@@ -24,7 +24,7 @@ class Initializer implements CommandLineRunner {
 
     private final UserService userService;
 
-    public Initializer(UserService userService) {git init
+    public Initializer(UserService userService) {
         this.userService = userService;
     }
 
