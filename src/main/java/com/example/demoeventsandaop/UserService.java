@@ -11,6 +11,7 @@ public class UserService {
         this.emailService = emailService;
     }
 
+    @EmailAfterReturning
     public User createUser(UserInfo info) {
         User user = info.toUser();
 
@@ -18,7 +19,7 @@ public class UserService {
 
         // save the user to the database
 
-        emailService.sendActivationEmail(user);
+        // emailService.sendActivationEmail(user);
 
         return user;
     }
